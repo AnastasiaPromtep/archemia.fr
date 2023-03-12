@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+}
+
+.navigation-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    color: rebeccapurple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title {
+    color: #BE3455
+}
