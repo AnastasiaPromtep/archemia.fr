@@ -1,0 +1,18 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+    font-family: 'Tangerine', cursive;
+}
