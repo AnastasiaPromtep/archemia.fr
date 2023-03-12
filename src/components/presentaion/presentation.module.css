@@ -10,9 +10,12 @@
     padding: 2em;
 }
 
-.example {
-    width: 50%;
+@media screen and (min-width: 800px) {
+    .example {
+        width: 50%;
+    }
 }
+
 
 .example-text {
     padding-right: 5em;
