@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 3em;
 }
 
 .example-container {
@@ -15,7 +15,6 @@
         width: 50%;
     }
 }
-
 
 .example-text {
     padding-right: 5em;

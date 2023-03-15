@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+
+    padding: 3em;
+}
+
+.illustration {
+    width: 50%;
+}
+
+.text-container {
+    padding: 3em;
+    width: 50%;
+}
+
+.text {
+    padding-right: 5em;
+}
