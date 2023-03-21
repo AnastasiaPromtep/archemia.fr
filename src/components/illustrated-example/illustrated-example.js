@@ -1,10 +1,13 @@
 import * as React from 'react';
-import {StaticImage} from "gatsby-plugin-image";
-import {container, illustration, textContainer, text} from './illustrated-example.module.css'
+import {StaticImage} from 'gatsby-plugin-image';
+import {container, illustration, textContainer, text, containerLeft} from './illustrated-example.module.css';
+import cx from 'classnames';
 
-const IllustratedExample = () => {
+const IllustratedExample = ({left = false}) => {
+    const containerStyles = left ? cx(container, containerLeft) : cx(container);
+
     return (
-        <main className={container}>
+        <main className={containerStyles}>
             <StaticImage className={illustration} src='../../images/750x440.svg' alt='A nice placeholder'/>
             <div className={textContainer}>
                 <h2>Sed ut perspiciatis unde omnis</h2>

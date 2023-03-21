@@ -11,6 +11,7 @@ const IndexPage = () => {
             <Hero></Hero>
             <Presentation></Presentation>
             <IllustratedExample></IllustratedExample>
+            <IllustratedExample left={true}></IllustratedExample>
         </main>
       </Layout>
   )
