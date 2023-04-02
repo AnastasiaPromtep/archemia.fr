@@ -16,5 +16,7 @@
 }
 
 .title {
-    color: #BE3455
+    color: #BE3455;
+    text-decoration: none;
+    font-weight: bold;
 }
