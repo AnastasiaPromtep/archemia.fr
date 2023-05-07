@@ -4,11 +4,14 @@
 module.exports = {
   siteMetadata: {
     title: `Archemia`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.archemia.fr`,
   },
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-mdx',
+    'gatsby-transformer-ffmpeg',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,6 +24,13 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `video`,
+        path: `${__dirname}/src/videos`,
       }
     },
   ],
