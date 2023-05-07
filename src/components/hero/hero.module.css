@@ -1,19 +1,31 @@
 .container {
     position: relative;
     text-align: center;
+    height: 100vh;
 }
 
-.image {
+.videoContainer {
     width: 100%;
+    height: 75%;
 }
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-    font-family: 'Tangerine', cursive;
-    color: white;
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.textContainer {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #1c1534;
+    color: lightgrey;
+    padding: 2em;
+}
+
+.subtitle {
+    font-size: x-large;
 }

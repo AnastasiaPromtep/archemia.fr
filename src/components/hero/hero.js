@@ -1,12 +1,28 @@
-import {StaticImage} from "gatsby-plugin-image";
 import * as React from "react";
-import { container, image, title } from "./hero.module.css"
+import {
+    container,
+    video,
+    videoContainer,
+    textContainer,
+    subtitle
+} from "./hero.module.css"
+import heroVideo from "../../videos/hero-video.mp4"
+import '../../pages/index.scss';
 
 const Hero = () => {
     return (
         <main className={container}>
-            <StaticImage className={image} src='../../images/hero.jpeg' alt='Place holder image'/>
-            <span className={title}>L'alchimie de votre contenu</span>
+            <div className={videoContainer}>
+                <video autoPlay muted loop className={video}>
+                    <source src={heroVideo} type="video/mp4"/>
+                </video>
+            </div>
+            <div className={textContainer}>
+                <p className={subtitle}>
+                    Une équipe qui vous aide à monter votre stratégie de communication et à créer vos contenus,
+                    sans intermédiaire, en combinant vos besoins et vos envies. L’alchimie parfaite.
+                </p>
+            </div>
         </main>
     )
 }
