@@ -11,7 +11,7 @@ import '../../pages/index.scss';
 
 const Hero = () => {
     return (
-        <main className={container}>
+        <main id='heroSection' className={container}>
             <div className={videoContainer}>
                 <video autoPlay muted loop className={video}>
                     <source src={heroVideo} type="video/mp4"/>
