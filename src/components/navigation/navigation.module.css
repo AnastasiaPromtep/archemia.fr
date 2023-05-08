@@ -1,16 +1,37 @@
 .container {
     display: flex;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    padding: 0.5em;
+}
+
+.activeContainer {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    padding: 0.5em;
+
+    background-color: whitesmoke;
 }
 
 .navigation-link {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    width: 100%;
 }
 
 .link {
-    color: rebeccapurple;
+    color: #1c1534;
     text-decoration: none;
     font-weight: bold;
 }
