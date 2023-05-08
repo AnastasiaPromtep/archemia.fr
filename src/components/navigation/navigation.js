@@ -6,20 +6,25 @@ import {useEffect, useState} from "react";
 
 const Navigation = () => {
     const [isNavBarTransparent, setIsNavBarTransparent] = useState(true);
+
     const changeBackground = () => {
-        if (window.scrollY >= 100) {
-            setIsNavBarTransparent(false);
-        } else {
+        const landingPageContainer = document.getElementById('landingPageContainer');
+
+        if (landingPageContainer.scrollTop  === 0) {
             setIsNavBarTransparent(true);
+        } else {
+            setIsNavBarTransparent(false);
         }
     }
 
     useEffect(() => {
+        const landingPageContainer = document.getElementById('landingPageContainer');
+
         changeBackground();
-        window.addEventListener('scroll', changeBackground);
+        landingPageContainer.addEventListener('scroll', changeBackground);
 
         return () => {
-            window.removeEventListener('scroll', changeBackground);
+            landingPageContainer.removeEventListener('scroll', changeBackground);
         }
     });
 

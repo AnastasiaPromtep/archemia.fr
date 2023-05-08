@@ -10,7 +10,7 @@ import { container } from './index.module.css';
 const IndexPage = () => {
     return (
       <Layout>
-        <main className={ container }>
+        <main id='landingPageContainer' className={ container }>
             <Hero></Hero>
             <AnimatedLogo></AnimatedLogo>
             <Presentation></Presentation>
