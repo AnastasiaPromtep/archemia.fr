@@ -1,11 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout";
 import Hero from "../components/hero/hero"
-import Presentation from "../components/presentaion/presentation";
-import IllustratedExample from "../components/illustrated-example/illustrated-example";
 import Seo from "../components/seo/seo";
 import AnimatedLogo from "../components/animated-logo/animated-logo";
 import { container } from './index.module.css';
+import WorkShowcase from "../components/work-showcase/work-showcase";
+import Contact from "../components/contact/contact";
 
 const IndexPage = () => {
     return (
@@ -13,9 +13,8 @@ const IndexPage = () => {
         <main id='landingPageContainer' className={ container }>
             <Hero></Hero>
             <AnimatedLogo></AnimatedLogo>
-            <Presentation></Presentation>
-            <IllustratedExample></IllustratedExample>
-            <IllustratedExample left={true}></IllustratedExample>
+            <WorkShowcase></WorkShowcase>
+            <Contact></Contact>
         </main>
       </Layout>
     );
