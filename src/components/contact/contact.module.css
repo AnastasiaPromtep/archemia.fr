@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    scroll-snap-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
