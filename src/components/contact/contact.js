@@ -6,7 +6,7 @@ const Contact = () => {
         <main className={ container }>
             <div className={ textContainer }>
                 <h1>Un projet ? Parlons-nous !</h1>
-                <h2>Etablissons ensemble les composants de formules</h2>
+                <h2>Etablissons ensemble les composants de votre formule</h2>
                 <button>Contact</button>
             </div>
 
