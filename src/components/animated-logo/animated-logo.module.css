@@ -1,0 +1,165 @@
+.container {
+    height: 100vh;
+    scroll-snap-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoContainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 500px;
+
+    background-color: lightgrey;
+}
+
+.bigCircle {
+    position: absolute;
+
+    border: 3px #1c1534 solid;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 75%;
+    height: 75%;
+
+    background-color: rebeccapurple;
+    border: 4px red solid;
+
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+}
+
+.cardEditor {
+    position: relative;
+
+    border: 5px #f7a711 solid;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #f7a711;
+
+    width: 25%;
+    height: 50%;
+
+    padding: 2em;
+
+    background-color: whitesmoke;
+}
+
+.littleCircleEditor {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 5px #f7a711 solid;
+    border-radius: 50%;
+    box-shadow: 0px -2px 5px #f7a711;
+
+    width: 25%;
+    height: 25%;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+.iconEditor {
+    color: #f7a711;
+}
+
+.cardVideo {
+    position: relative;
+
+    border: 5px #BE3455 solid;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #BE3455;
+
+    width: 25%;
+    height: 50%;
+
+    padding: 2em;
+
+    background-color: whitesmoke;
+}
+
+.littleCircleVideo {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 5px #BE3455 solid;
+    border-radius: 50%;
+    box-shadow: 0px -2px 5px #BE3455;
+
+    width: 25%;
+    height: 25%;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+.iconVideo {
+    color: #BE3455;
+}
+
+.cardWeb {
+    position: relative;
+
+    border: 5px #3591a1 solid;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #3591a1;
+
+    width: 25%;
+    height: 50%;
+
+    padding: 2em;
+
+    background-color: whitesmoke;
+}
+
+.littleCircleWeb {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 5px #3591a1 solid;
+    border-radius: 50%;
+    box-shadow: 0px -2px 5px #3591a1;
+
+    width: 25%;
+    height: 25%;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+.iconWeb {
+    color: #3591a1;
+}
