@@ -4,44 +4,77 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
+    padding: 4em 1em 1em 1em;
+}
+
+.alchemy {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(190, 52, 85, 0.5);
+
+    padding: 1em;
+}
+
+.textContainer {
+    height: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    overflow: hidden;
+}
+
+@media (min-width: 900px) {
+    .textBox {
+        width: 50%;
+    }
+}
+
+.textBox h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #BE3455;
+}
+
+.textBox h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.textBox p {
+    font-size: large;
+    overflow: hidden;
+}
+
+.textBox button {
+    font-size: large;
+    background-color: #BE3455;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0.5em;
 }
 
 .logoContainer {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 500px;
-    height: 500px;
-
-    background-color: lightgrey;
-}
-
-.bigCircle {
-    position: absolute;
-
-    border: 3px #1c1534 solid;
-    border-radius: 50%;
-
-    width: 100%;
-    height: 100%;
-}
-
-.triangle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 75%;
-    height: 75%;
-
-    background-color: rebeccapurple;
-    border: 4px red solid;
-
-    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .cardEditor {
@@ -49,7 +82,7 @@
 
     border: 5px #f7a711 solid;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px #f7a711;
+    box-shadow: 0 0 10px #f7a711;
 
     width: 25%;
     height: 50%;
@@ -60,24 +93,18 @@
 }
 
 .littleCircleEditor {
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border: 5px #f7a711 solid;
+    border: 3px #f7a711 solid;
     border-radius: 50%;
-    box-shadow: 0px -2px 5px #f7a711;
 
-    width: 25%;
-    height: 25%;
+    width: 3em;
+    height: 3em;
 
     background-color: whitesmoke;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: xxx-large;
+    font-size: x-large;
 }
 
 .iconEditor {
@@ -85,39 +112,44 @@
 }
 
 .cardVideo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
     position: relative;
 
     border: 5px #BE3455 solid;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px #BE3455;
+    box-shadow: 0 0 10px #BE3455;
 
     width: 25%;
     height: 50%;
 
-    padding: 2em;
+    padding: 1em;
 
     background-color: whitesmoke;
+
+    overflow-y: hidden;
+}
+
+.cardVideo h2 {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .littleCircleVideo {
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border: 5px #BE3455 solid;
+    border: 3px #BE3455 solid;
     border-radius: 50%;
-    box-shadow: 0px -2px 5px #BE3455;
 
-    width: 25%;
-    height: 25%;
+    width: 3em;
+    height: 3em;
 
     background-color: whitesmoke;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: xxx-large;
+    font-size: x-large;
 }
 
 .iconVideo {
@@ -129,7 +161,7 @@
 
     border: 5px #3591a1 solid;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px #3591a1;
+    box-shadow: 0 0 10px #3591a1;
 
     width: 25%;
     height: 50%;
@@ -140,24 +172,18 @@
 }
 
 .littleCircleWeb {
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border: 5px #3591a1 solid;
+    border: 3px #3591a1 solid;
     border-radius: 50%;
-    box-shadow: 0px -2px 5px #3591a1;
 
-    width: 25%;
-    height: 25%;
+    width: 3em;
+    height: 3em;
 
     background-color: whitesmoke;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: xxx-large;
+    font-size: x-large;
 }
 
 .iconWeb {
