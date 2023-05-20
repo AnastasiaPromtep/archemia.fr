@@ -1,5 +1,10 @@
 import * as React from "react";
-import { container, navigationLink, link, title, activeContainer } from "./navigation.module.css";
+import {
+    container,
+    navigationLink,
+    link,
+    logo,
+    active} from "./navigation.module.css";
 import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 import {useEffect, useState} from "react";
@@ -29,17 +34,16 @@ const Navigation = () => {
     });
 
     return (
-        <main className={ isNavBarTransparent ? container : activeContainer }>
-            <h1 className={ title }>
-                <Link to='/'>
-                    <StaticImage src={'../../images/logo.png'} alt="Logo" width={50}/>
-                </Link>
-            </h1>
+        <main className={ isNavBarTransparent ? container : `${container} ${active}` }>
             <nav className={ navigationLink }>
-                <a className={ link } href="#">Projets</a>
+                <a className={ link } href="#">Réalisations</a>
+                <a className={ link }>L'équipe</a>
                 <Link to='/blog' className={ link }>Blog</Link>
-                <Link to='/about' className={ link }>Qui sommes-nous ?</Link>
+                <Link to='/about' className={ link }>Contact</Link>
             </nav>
+            <Link className={ logo } to='/'>
+                <StaticImage src={'../../images/logo.png'} alt="Logo" width={50}/>
+            </Link>
         </main>
     )
 }
