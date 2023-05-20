@@ -8,8 +8,6 @@
     height: 5%;
 
     display: flex;
-
-    padding: 0.5em;
 }
 
 .container.active {
@@ -18,21 +16,17 @@
 
 .navigation-link {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 
     width: 100%;
 }
 
 .link {
-    color: #1c1534;
-    text-decoration: none;
-    font-weight: bold;
-}
+    width: 20%;
 
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+
+    color: #1c1534;
+    font-weight: bold;
 }
