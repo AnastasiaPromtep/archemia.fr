@@ -1,6 +1,7 @@
 .container {
     height: 100vh;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
 
     display: flex;
     flex-direction: column;
