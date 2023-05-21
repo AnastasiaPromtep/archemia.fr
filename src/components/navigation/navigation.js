@@ -35,7 +35,7 @@ const Navigation = () => {
     return (
         <main className={ isNavBarTransparent ? container : `${container} ${active}` }>
             <nav className={ navigationLink }>
-                <a className={ link } href="#">Réalisations</a>
+                <a className={ link } href="#">Projets</a>
                 <a className={ link }>L'équipe</a>
                 <Link className={ link } to='/'>
                     <StaticImage src={'../../images/nav-bar-logo.png'} alt="Logo" width={50}/>
