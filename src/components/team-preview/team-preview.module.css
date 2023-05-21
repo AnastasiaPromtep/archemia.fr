@@ -26,6 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 10%;
 }
 
 .profile h2 {
