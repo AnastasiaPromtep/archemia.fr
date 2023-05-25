@@ -27,10 +27,10 @@
 .textContainer h1 {
     font-size: xxx-large;
     font-weight: bold;
-    color: whitesmoke;
+    color: #EFEFEF;
 }
 
 .textContainer h2 {
-    font-size: xx-large;
-    color: lightgrey;
+    font-size: xxx-large;
+    color: #EFEFEF;
 }

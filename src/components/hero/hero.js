@@ -16,7 +16,7 @@ const Hero = () => {
                     <source src={heroVideo} type="video/mp4"/>
                 </video>
                 <div className={ textContainer }>
-                    <h1>ARCHEMIA</h1>
+                    <h1>Agence web et créative</h1>
                     <h2>Idées | Contenu | Alchimie</h2>
                 </div>
             </div>
