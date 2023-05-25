@@ -5,7 +5,6 @@ import {
     link,
     active} from "./navigation.module.css";
 import {Link} from "gatsby";
-import {StaticImage} from "gatsby-plugin-image";
 import {useEffect, useState} from "react";
 
 const Navigation = () => {
