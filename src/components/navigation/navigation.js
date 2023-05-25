@@ -37,9 +37,7 @@ const Navigation = () => {
             <nav className={ navigationLink }>
                 <a className={ link } href="#">Projets</a>
                 <a className={ link }>L'équipe</a>
-                <Link className={ link } to='/'>
-                    <StaticImage src={'../../images/nav-bar-logo.png'} alt="Logo" width={50}/>
-                </Link>
+                <Link className={ link } to='/'><h1>Archemia</h1></Link>
                 <Link to='/blog' className={ link }>Blog</Link>
                 <Link to='/about' className={ link }>Contact</Link>
             </nav>
