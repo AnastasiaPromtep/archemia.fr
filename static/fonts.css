@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Futura PT Light';
+    src: local('Futura PT Light'), url(/fonts/Futura/FuturaPTLight.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'BC Alphapipe';
+    src: local('BC Alphapipe'), url(/fonts/BC-Alphapipe/BC-Alphapipe-L-Regular.ttf) format('TrueType');
+}
