@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-mdx',
     'gatsby-transformer-ffmpeg',
@@ -33,5 +34,13 @@ module.exports = {
         path: `${__dirname}/src/videos`,
       }
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    }
   ],
 }
