@@ -11,7 +11,7 @@
 }
 
 .container.active {
-    background-color: whitesmoke;
+    background-color: #1c1534;
 }
 
 .navigation-link {
@@ -27,11 +27,12 @@
     text-align: center;
     text-decoration: none;
 
-    color: #1c1534;
+    color: #EFEFEF;
     font-weight: bold;
 }
 
 .link h1 {
     font-family: "BC Alphapipe", sans-serif;
+    font-weight: 600;
     font-size: xx-large;
 }
