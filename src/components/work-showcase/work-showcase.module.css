@@ -4,6 +4,27 @@
     scroll-snap-stop: always;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
+    color: #EFEFEF;
+    background-color: #1c1534;
+
+    padding: 3em;
+}
+
+.container h1 {
+    font-size: xxx-large;
+    font-weight: 600;
+    align-self: start;
+}
+
+.container div h2 {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.container div span {
+    font-size: x-large;
 }
