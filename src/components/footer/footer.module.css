@@ -1,28 +1,29 @@
 .footer {
+	width: 100vw;
+
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 80px 0px 40px;
 	gap: 40px;
-	position: absolute;
-	width: 100vw;
-	left: 0px;
+
+	padding: 80px 0 40px;
 	background-color: #190735;
 }
 
 .content {
+	width: 100%;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	gap: 32px;
-	width: 100%;
 }
 
 .logo {
-	width:140px;
+	width: 140px;
 	height: 27px;
-	font-family: "bc-alphapipe", sans-serif;
+	font-family: "BC Alphapipe", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 30px;
@@ -37,7 +38,7 @@
 	display: flex;
 	flex-direction:row;
 	align-items: flex-start;
-	padding: 0px;
+	padding: 0;
 	gap: 32px;
 	height: 24px;
 }
@@ -48,7 +49,6 @@ a {
 	text-decoration:none;
 	/* Text/Regular/Semibold */
 
-	font-family: "futura-pt", sans-serif;
 	font-style: normal;
 	font-size: 16px;
 	line-height: 150%;
@@ -91,7 +91,6 @@ hr.solid {
 
 	/* Text/Small/Normal */
 
-	font-family: "futura-pt", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;

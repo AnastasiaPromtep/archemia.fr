@@ -9,7 +9,7 @@ import {
     mentions
 } from './footer.module.css';
 import {
-    faVideo
+    faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
