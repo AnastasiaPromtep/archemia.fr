@@ -9,8 +9,8 @@
     justify-content: center;
     gap: 2em;
 
-    background-color: whitesmoke;
-    color: #1c1534;
+    background-color: #1c1534;
+    color: #EFEFEF;
     font-size: xxx-large;
 }
 
@@ -30,11 +30,47 @@
     align-items: center;
     justify-content: center;
 
+    gap: 2em;
+
     width: 10%;
 }
 
-.profile h2 {
+.profile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile h1, h2 {
     font-size: xx-large;
+}
+
+.profile h2 {
+    font-family: 'BC Alphapipe', sans-serif;
+    font-weight: 600;
+}
+
+.profile img {
+    border-radius: 5%;
+}
+
+.profile span {
+    margin-top: 1em;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.profile.video span {
+    color: #BE3455;
+}
+
+.profile.edition span {
+    color: #f7a711;
+}
+
+.profile.web span {
+    color: #3591a1;
 }
 
 .profile svg {
