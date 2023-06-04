@@ -1,0 +1,66 @@
+.container {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    color: #EFEFEF;
+}
+
+.container.edition {
+    background-color: #f7a711;
+}
+
+.container.video {
+    background-color: #BE3455;
+}
+
+.container.web {
+    background-color: #3591a1;
+}
+
+.logoContainer {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    transform: translate(0, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #EFEFEF;
+    border: 15px solid #EFEFEF;
+    border-radius: 50%;
+    box-shadow:
+            0 0 5px 1px black,
+            inset 0 0 5px 1px black;
+    font-size: 90px;
+}
+
+.textContainer {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+}
+
+.textContainer h1 {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.textContainer p {
+    font-size: x-large;
+}
