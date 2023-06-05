@@ -9,7 +9,7 @@ import {
     active} from "./navigation.module.css";
 
 const Navigation = () => {
-    const [isNavBarTransparent, setIsNavBarTransparent] = useState(true);
+    const [isNavBarTransparent, setIsNavBarTransparent] = useState(false);
 
     const changeBackground = () => {
         const landingPageContainer = document.getElementById('landingPageContainer');
