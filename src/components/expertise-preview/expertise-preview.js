@@ -35,6 +35,8 @@ const getExpertiseIcon = (expertise) => {
             return faVideo;
         case 'web':
             return faGlobe;
+        default:
+            return '';
     }
 }
 
@@ -46,6 +48,8 @@ const getExpertiseTitle = (expertise) => {
             return 'Réalisation';
         case 'web':
             return 'Développement web';
+        default:
+            return '';
     }
 }
 
@@ -63,6 +67,8 @@ const getExpertiseText = (expertise) => {
             return 'Besoin d’une refonte graphique, d’ajouter des fonctionnalités à votre site ou simplement d’en créer ' +
                 'un nouveau ? Nous utilisons les dernières technologies et tendances design pour vous aider à reprendre ' +
                 'ou à créer votre site web.';
+        default:
+            return ''
     }
 }
 
