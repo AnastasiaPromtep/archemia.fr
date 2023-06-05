@@ -1,11 +1,12 @@
 import * as React from "react";
+import {useEffect, useState} from "react";
+import {Link} from "gatsby";
+
 import {
     container,
     navigationLink,
     link,
     active} from "./navigation.module.css";
-import {Link} from "gatsby";
-import {useEffect, useState} from "react";
 
 const Navigation = () => {
     const [isNavBarTransparent, setIsNavBarTransparent] = useState(true);
@@ -13,7 +14,7 @@ const Navigation = () => {
     const changeBackground = () => {
         const landingPageContainer = document.getElementById('landingPageContainer');
 
-        if (landingPageContainer.scrollTop  === 0) {
+        if (landingPageContainer && landingPageContainer.scrollTop === 0) {
             setIsNavBarTransparent(true);
         } else {
             setIsNavBarTransparent(false);
@@ -23,11 +24,15 @@ const Navigation = () => {
     useEffect(() => {
         const landingPageContainer = document.getElementById('landingPageContainer');
 
-        changeBackground();
-        landingPageContainer.addEventListener('scroll', changeBackground);
+        if (landingPageContainer) {
+            changeBackground();
+            landingPageContainer.addEventListener('scroll', changeBackground);
+        }
+
 
         return () => {
-            landingPageContainer.removeEventListener('scroll', changeBackground);
+            if (landingPageContainer)
+                landingPageContainer.removeEventListener('scroll', changeBackground);
         }
     });
 
