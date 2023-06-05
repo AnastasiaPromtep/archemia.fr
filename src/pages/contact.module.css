@@ -1,0 +1,12 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
