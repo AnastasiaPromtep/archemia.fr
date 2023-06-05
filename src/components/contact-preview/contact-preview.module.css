@@ -1,0 +1,52 @@
+.container {
+    height: 100vh;
+    scroll-snap-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #EFEFEF;
+}
+
+.contactContainer {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-container h1 {
+    font-size: xxx-large;
+}
+
+.text-container h2 {
+    font-size: xx-large;
+}
+
+.text-container button {
+    font-size: x-large;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
