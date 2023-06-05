@@ -1,3 +1,14 @@
+.container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1c1534;
+    color: #EFEFEF;
+}
+
 .formContainer {
     display: flex;
     align-items: center;
