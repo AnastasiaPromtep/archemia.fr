@@ -39,11 +39,11 @@ const Navigation = () => {
     return (
         <main className={ isNavBarTransparent ? container : `${container} ${active}` }>
             <nav className={ navigationLink }>
-                <a className={ link } href="#">Projets</a>
-                <a className={ link }>L'équipe</a>
+                <Link to='/project' className={ link } href="#">Projets</Link>
+                <Link to='/team' className={ link }>L'équipe</Link>
                 <Link className={ link } to='/'><h1>Archemia</h1></Link>
                 <Link to='/blog' className={ link }>Blog</Link>
-                <Link to='/about' className={ link }>Contact</Link>
+                <Link to='/contact' className={ link }>Contact</Link>
             </nav>
 
         </main>
