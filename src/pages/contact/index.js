@@ -4,9 +4,9 @@ import {useState} from "react";
 import {
     container,
     formContainer
-} from "./contact.module.css";
-import Seo from "../components/seo/seo";
-import Layout from "../components/layout";
+} from "./index.module.css";
+import Seo from "../../components/seo/seo";
+import Layout from "../../components/layout";
 
 const ContactPage = () => {
     const [inputs, setInputs] = useState({});
