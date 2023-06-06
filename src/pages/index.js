@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import Hero from "../components/hero/hero"
 import Seo from "../components/seo/seo";
 import WorkShowcase from "../components/work-showcase/work-showcase";
-import Contact from "../components/contact/contact";
+import ContactPreview from "../components/contact-preview/contact-preview";
 import TeamPreview from "../components/team-preview/team-preview";
 import ExpertisePreview from "../components/expertise-preview/expertise-preview";
 
@@ -20,7 +20,7 @@ const IndexPage = () => {
             <ExpertisePreview expertise='web'></ExpertisePreview>
             <WorkShowcase></WorkShowcase>
             <TeamPreview></TeamPreview>
-            <Contact></Contact>
+            <ContactPreview></ContactPreview>
         </main>
       </Layout>
     );
