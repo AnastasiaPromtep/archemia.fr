@@ -35,5 +35,14 @@
 }
 
 .text-container button {
+    border: none;
+    outline: none;
+    background-color: #1c1534;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0 black;
+}
+
+.buttonLink {
     font-size: x-large;
+    color: #EFEFEF;
 }
