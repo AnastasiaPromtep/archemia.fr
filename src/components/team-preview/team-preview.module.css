@@ -14,6 +14,11 @@
     font-size: xxx-large;
 }
 
+.container h1 {
+    font-family: 'BC Alphapipe', sans-serif;
+    font-weight: 600;
+}
+
 .profileContainer {
     display: flex;
     align-items: center;
