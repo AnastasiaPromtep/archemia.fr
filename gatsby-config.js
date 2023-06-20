@@ -4,7 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `Archemia`,
-    siteUrl: `https://www.archemia.fr`,
+    description: `Agence de communication`,
+    image: `/logo-icon-fond-blanc.png`,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
     'gatsby-plugin-image',
