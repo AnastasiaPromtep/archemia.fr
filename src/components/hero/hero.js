@@ -5,7 +5,6 @@ import {
     videoContainer,
     textContainer,
 } from "./hero.module.css"
-import heroVideo from "../../videos/hero-video.mp4"
 import '../../pages/index.scss';
 
 const Hero = () => {
@@ -13,7 +12,7 @@ const Hero = () => {
         <main id='heroSection' className={container}>
             <div className={videoContainer}>
                 <video autoPlay muted loop className={video}>
-                    <source src={heroVideo} type="video/mp4"/>
+                    <source src='https://archemia-fontend.imgix.net/hero-video.mp4' type="video/mp4"/>
                 </video>
                 <div className={ textContainer }>
                     <h1>Agence web et créative</h1>
