@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+// If need, change your variables before importing Bulma
+// $title-color: #ff0000;
+
+@import "~bulma/bulma.sass";
+
+.scroll-snap-container-vertical {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-section-vertical {
+  height: 100vh;
+  scroll-snap-align: center;
+}
