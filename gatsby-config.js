@@ -30,11 +30,11 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `@imgix/gatsby`,
       options: {
-        name: `video`,
-        path: `${__dirname}/src/videos`,
-      }
+        domain: '<your imgix domain, e.g. acme.imgix.net>',
+        defaultImgixParams: { auto: ['compress', 'format'] },
+    },
     },
     {
       resolve: "gatsby-plugin-react-svg",
