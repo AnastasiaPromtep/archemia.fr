@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import { container } from './index.module.css';
-
 import Layout from "../components/layout";
 import Hero from "../components/hero/hero"
 import Seo from "../components/seo/seo";
@@ -13,11 +11,9 @@ import ExpertisePreview from "../components/expertise-preview/expertise-preview"
 const IndexPage = () => {
     return (
       <Layout>
-        <main id='landingPageContainer' className={ container }>
+        <main id='landingPageContainer' >
             <Hero></Hero>
-            <ExpertisePreview expertise='edition'></ExpertisePreview>
-            <ExpertisePreview expertise='video'></ExpertisePreview>
-            <ExpertisePreview expertise='web'></ExpertisePreview>
+            <ExpertisePreview></ExpertisePreview>
             <WorkShowcase></WorkShowcase>
             <TeamPreview></TeamPreview>
             <ContactPreview></ContactPreview>

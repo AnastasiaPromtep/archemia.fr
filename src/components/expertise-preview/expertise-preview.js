@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useEffect, useRef, useState} from "react";
 
 import {
     faPen,
@@ -9,10 +10,10 @@ import {
 import {
     container,
     textContainer,
-    logoContainer,
     edition,
     video,
-    web
+    web,
+    active
 } from './expertise-preview.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -24,6 +25,8 @@ const getExpertiseStyle = (expertise) => {
             return video;
         case 'web':
             return web;
+        default:
+            return '';
     }
 }
 
@@ -72,22 +75,75 @@ const getExpertiseText = (expertise) => {
     }
 }
 
-const ExpertisePreview = ( props ) => {
+const ExpertisePreview = () => {
+    const editionContainerRef = useRef(null);
+    const videoContainerRef = useRef(null);
+    const webContainerRef = useRef(null);
+    const [expertise, setExpertise] = useState('');
+
+    const callback = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio >= 0.5) {
+                setExpertise(entry.target.id);
+            }
+        });
+    };
+
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+        const observer = new IntersectionObserver(callback, options);
+        observer.observe(editionContainerRef.current);
+        observer.observe(videoContainerRef.current);
+        observer.observe(webContainerRef.current);
+
+        return () => {
+            observer.unobserve(editionContainerRef.current);
+            observer.unobserve(videoContainerRef.current);
+            observer.unobserve(webContainerRef.current);
+        }
+    }, [editionContainerRef, videoContainerRef, webContainerRef, callback, expertise]);
+
     return (
-        <main className={ `${container} ${getExpertiseStyle(props.expertise)}` }>
-            <div className={ logoContainer }>
-                <span>
-                    <FontAwesomeIcon icon={getExpertiseIcon(props.expertise)} />
-                </span>
+        <main className={ `${container} ${getExpertiseStyle(expertise)}` }>
+            <div id="edition" ref={editionContainerRef}>
+                <div className={`${textContainer} ${expertise === 'edition' ? active : ''}`}>
+                    <h1>
+                        <FontAwesomeIcon icon={getExpertiseIcon('edition')} />
+                        {getExpertiseTitle('edition')}
+                    </h1>
+                    <p>
+                        {getExpertiseText('edition')}
+                    </p>
+                </div>
             </div>
-            <div className={ textContainer }>
-                <h1>{getExpertiseTitle(props.expertise)}</h1>
-                <p>
-                    {getExpertiseText(props.expertise)}
-                </p>
+            <div id="video" ref={videoContainerRef}>
+                <div className={`${textContainer} ${expertise === 'video' ? active : ''}`}>
+                    <h1>
+                        <FontAwesomeIcon icon={getExpertiseIcon('video')} />
+                        {getExpertiseTitle('video')}
+                    </h1>
+                    <p>
+                        {getExpertiseText('video')}
+                    </p>
+                </div>
+            </div>
+            <div id="web" ref={webContainerRef}>
+                <div className={`${textContainer} ${expertise === 'web' ? active : ''}`}>
+                    <h1>
+                        <FontAwesomeIcon icon={getExpertiseIcon('web')} />
+                        {getExpertiseTitle('web')}
+                    </h1>
+                    <p>
+                        {getExpertiseText('web')}
+                    </p>
+                </div>
             </div>
         </main>
     );
-};
+}
 
 export default ExpertisePreview;

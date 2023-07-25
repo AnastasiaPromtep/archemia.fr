@@ -1,5 +1,14 @@
-.container {
+.counter {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: xxx-large;
+    z-index: 1;
+}
+
+.section {
     height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    background-color: blue;
 }

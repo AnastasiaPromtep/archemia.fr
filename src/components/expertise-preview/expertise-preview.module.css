@@ -1,13 +1,21 @@
 .container {
-    height: 100vh;
+    height: 300vh;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 
     position: relative;
 
     color: #EFEFEF;
+    background-color: #1c1534;
+    transition: background-color 2s ease-out;
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container.edition {
@@ -52,9 +60,19 @@
     align-items: start;
     justify-content: center;
     gap: 1em;
+
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.textContainer.active {
+    opacity: 1;
 }
 
 .textContainer h1 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
     font-size: xx-large;
     font-weight: 600;
 }
