@@ -101,9 +101,7 @@ const ExpertisePreview = () => {
         observer.observe(webContainerRef.current);
 
         return () => {
-            observer.unobserve(editionContainerRef.current);
-            observer.unobserve(videoContainerRef.current);
-            observer.unobserve(webContainerRef.current);
+            observer.disconnect();
         }
     }, [editionContainerRef, videoContainerRef, webContainerRef, callback, expertise]);
 
